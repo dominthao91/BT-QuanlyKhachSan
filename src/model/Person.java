@@ -1,6 +1,6 @@
-package QuanLyKhachSan;
+package model;
 
-public class Person {
+public class Person{
     private String name;
     private String datOfBirth;
     private  String identity;

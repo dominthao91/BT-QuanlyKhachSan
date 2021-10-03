@@ -1,17 +1,19 @@
-package QuanLyKhachSan;
+package model;
 
 public class Hotel {
+    private  String id;
     private int day ;
-    private String typee;
+    private String type;
     private double price;
     private Person person;
 
     public Hotel() {
     }
 
-    public Hotel(int day, String typee, double price, Person person) {
+    public Hotel(String id,int day, String type, double price, Person person) {
         this.day = day;
-        this.typee = typee;
+        this.id =id;
+        this.type = type;
         this.price = price;
         this.person = person;
     }
@@ -20,16 +22,24 @@ public class Hotel {
         return day;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public void setDay(int day) {
         this.day = day;
     }
 
-    public String getTypee() {
-        return typee;
+    public String getType() {
+        return type;
     }
 
-    public void setTypee(String typee) {
-        this.typee = typee;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public double getPrice() {
@@ -52,7 +62,7 @@ public class Hotel {
     public String toString() {
         return "Hotel{" +
                 "day=" + day +
-                ", typee='" + typee + '\'' +
+                ", type='" + type + '\'' +
                 ", price=" + price +
                 ", person=" + person +
                 '}';
