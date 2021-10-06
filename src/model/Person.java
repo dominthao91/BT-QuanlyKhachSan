@@ -1,9 +1,9 @@
 package model;
 
-public class Person{
+public class Person {
     private String name;
     private String datOfBirth;
-    private  String identity;
+    private String identity;
 
     public Person() {
     }
@@ -13,6 +13,7 @@ public class Person{
         this.datOfBirth = datOfBirth;
         this.identity = identity;
     }
+
 
     public String getName() {
         return name;

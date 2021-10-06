@@ -1,6 +1,6 @@
 package model;
 
-public class Hotel {
+public class Hotel extends Person {
     private  String id;
     private int day ;
     private String type;

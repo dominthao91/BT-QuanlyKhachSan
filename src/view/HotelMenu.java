@@ -39,7 +39,11 @@ public class HotelMenu {
                     break;
 
                 }
-                case 5: {
+                case 5:{
+                    billPlease();
+                    break;
+                }
+                case 0: {
                     System.exit(0);
                     break;
 
@@ -47,6 +51,14 @@ public class HotelMenu {
             }
 
         } while (choice != 0);
+    }
+
+    private void billPlease() {
+        System.out.println("nhập CMDN muốn tính tiền");
+        String identity=scanner.nextLine();
+        hotelManager.billPlease(identity);
+
+
     }
 
     private void removeGuset() {
@@ -101,6 +113,7 @@ public class HotelMenu {
         System.out.println("2. Thêm khách mới");
         System.out.println("3. Chỉnh sửa thông tin khách hàng");
         System.out.println("4. Xóa thông tin");
+        System.out.println("5. Tính tiền cho khách");
         System.out.println("0. Thoát");
     }
 }
